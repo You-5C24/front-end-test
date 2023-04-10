@@ -6,4 +6,4 @@
 
 ## 知识点跳转
 
-- [stub 应用]()
+- [stub 应用]('./indirect-input/tests/case.spec.ts')
