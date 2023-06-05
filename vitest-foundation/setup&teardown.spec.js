@@ -5,7 +5,7 @@ import {
   afterAll,
   it,
   describe,
-} from "vitest";
+} from 'vitest';
 
 // 执行顺序
 // beforeAll 只执行一次，在最开始的时候，例如数据库的连接，创建临时文件
@@ -14,39 +14,39 @@ import {
 // afterAll 与 beforeAll 对应
 
 beforeAll(() => {
-  console.log("before all");
+  console.log('before all');
 });
 
 beforeEach(() => {
-  console.log("before each");
+  console.log('before each');
 });
 
-it("first", () => {
-  console.log("first");
+it('first', () => {
+  console.log('first');
 });
 
-it("second", () => {
-  console.log("second");
+it('second', () => {
+  console.log('second');
 });
 
 afterEach(() => {
-  console.log("after each");
+  console.log('after each');
 });
 
-describe("sub", () => {
+describe('sub', () => {
   beforeEach(() => {
-    console.log("sub: before each");
+    console.log('sub: before each');
   });
 
-  it("sub first", () => {
-    console.log("sub first");
+  it('sub first', () => {
+    console.log('sub first');
   });
 
   afterEach(() => {
-    console.log("sub: after each");
+    console.log('sub: after each');
   });
 });
 
 afterAll(() => {
-  console.log("after all");
+  console.log('after all');
 });
